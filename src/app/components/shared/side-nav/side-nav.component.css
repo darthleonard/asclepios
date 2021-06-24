@@ -1,0 +1,43 @@
+.menuOpen {
+  background-color: #3f51b5;
+  color: white;
+  height: 100%;
+  width: 230px;
+  transition: all 0.1s linear;
+  padding-top: 16px;
+}
+
+.menuClose {
+  background-color: #3f51b5;
+  color: white;
+  height: 100%;
+  width: 48px;
+  transition: all 0.1s linear;
+  padding-top: 16px;
+}
+
+.vertical-menu a {
+  color: white;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #7e8eeb;
+}
+
+.vertical-menu a.active {
+  background-color: #303e8c;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+.aligned-with-icon{
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 5px; /* optional */
+}

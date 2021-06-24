@@ -1,0 +1,20 @@
+import { Component, OnInit, ViewChild } from '@angular/core';
+@Component({
+  selector: 'app-side-nav',
+  templateUrl: './side-nav.component.html',
+  styleUrls: ['./side-nav.component.css']
+})
+export class SideNavComponent implements OnInit {
+  
+  constructor() { }
+
+  opened: boolean = true;
+  
+  ngOnInit(): void {
+  }
+
+  toggle() {
+    this.opened = !this.opened;
+  }
+
+}
