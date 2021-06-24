@@ -1,20 +1,24 @@
 <div [ngClass]="opened ? 'menuOpen' : 'menuClose'">
   <div class="vertical-menu">
-    <a [routerLink]="['/patients']" routerLinkActive="active">
+    <a [routerLink]="['/home']" routerLinkActive="active">
       <mat-icon>home</mat-icon>
-      <span [ngClass]="opened ? 'aligned-with-icon' : 'hidden'"> Patients </span>
+      <span [ngClass]="opened ? 'aligned-with-icon' : 'hidden'"> Home </span>
     </a>
-    <a [routerLink]="['/patients1']" routerLinkActive="active">
-      <mat-icon aria-label="people">schedule</mat-icon>
-      <span [ngClass]="opened ? 'aligned-with-icon' : 'hidden'"> Menu 1 </span>
+    <a [routerLink]="['/scheduler']" routerLinkActive="active">
+      <mat-icon aria-label="people">calendar_today</mat-icon>
+      <span [ngClass]="opened ? 'aligned-with-icon' : 'hidden'"> Calendar </span>
     </a>
-    <a [routerLink]="['/patients2']" routerLinkActive="active">
+    <a [routerLink]="['/people']" routerLinkActive="active">
       <mat-icon>people</mat-icon>
-      <span [ngClass]="opened ? 'aligned-with-icon' : 'hidden'"> Menu 2 </span>
+      <span [ngClass]="opened ? 'aligned-with-icon' : 'hidden'"> People </span>
     </a>
-    <a [routerLink]="['/patients3']" routerLinkActive="active">
-      <mat-icon>light</mat-icon>
-      <span [ngClass]="opened ? 'aligned-with-icon' : 'hidden'"> Menu 3 </span>
+    <a [routerLink]="['/devices']" routerLinkActive="active">
+      <mat-icon>devices</mat-icon>
+      <span [ngClass]="opened ? 'aligned-with-icon' : 'hidden'"> Devices </span>
+    </a>
+    <a [routerLink]="['/settings']" routerLinkActive="active">
+      <mat-icon>settings</mat-icon>
+      <span [ngClass]="opened ? 'aligned-with-icon' : 'hidden'"> Settings </span>
     </a>
   </div>
 </div>

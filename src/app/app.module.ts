@@ -8,19 +8,25 @@ import { MatButtonModule } from '@angular/material/button';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PatientsComponent } from './components/patients/patients.component';
 import { PageNotFountdComponent } from './components/errors/page-not-fountd/page-not-fountd.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SideNavComponent } from './components/shared/side-nav/side-nav.component';
 import { ToolbarComponent } from './components/shared/toolbar/toolbar.component';
+import { HomeComponent } from './components/home/home.component';
+import { SchedulerComponent } from './components/scheduler/scheduler.component';
+import { SettingsComponent } from './components/settings/settings.component';
+import { DevicesComponent } from './components/devices/devices.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PatientsComponent,
     PageNotFountdComponent,
     SideNavComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    HomeComponent,
+    SchedulerComponent,
+    SettingsComponent,
+    DevicesComponent
   ],
   imports: [
     BrowserModule,
